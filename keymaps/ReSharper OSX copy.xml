@@ -13,5 +13,8 @@
     <keyboard-shortcut first-keystroke="alt f7" />
     <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl r" />
   </action>
+  <action id="MoveEditorToOppositeTabGroup">
+    <keyboard-shortcut first-keystroke="meta alt o" />
+  </action>
   <action id="Vcs.Push" />
 </keymap>

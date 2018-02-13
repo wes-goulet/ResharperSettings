@@ -1,0 +1,6 @@
+<keymap version="1" name="ReSharper copy" parent="ReSharper">
+  <action id="MoveEditorToOppositeTabGroup">
+    <keyboard-shortcut first-keystroke="ctrl alt o" />
+  </action>
+  <action id="OptimizeImports" />
+</keymap>

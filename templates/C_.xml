@@ -15,7 +15,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="authCoordinator" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Coordinator == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="authCoordinator" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Coordinator == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -31,7 +31,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="authVendor" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Vendor == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="authVendor" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Vendor == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -47,7 +47,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="authParent" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Parent == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="authParent" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Parent == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />

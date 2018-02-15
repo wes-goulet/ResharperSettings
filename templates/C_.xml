@@ -1,5 +1,5 @@
 <templateSet group="C#">
-  <template name="authGeneral" value="try&#10;{&#10;    await _userService.GetUserAsync(User);&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" description="General Code to ensure user is authorized" toReformat="false" toShortenFQNames="true">
+  <template name="authGeneral" value="(var user, var error) = await CheckAuthorize();&#10;if (error != null)&#10;{&#10;    return error;&#10;}" description="General Code to ensure user is authorized" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />

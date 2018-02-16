@@ -1,0 +1,66 @@
+<templateSet group="C#">
+  <template name="authGeneral" value="try&#10;{&#10;    await _userService.GetUserAsync(User);&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" description="General Code to ensure user is authorized" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="authCoordinator" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Coordinator == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="authVendor" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Vendor == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="authParent" value="ApplicationUser user;&#10;try&#10;{&#10;    user = await _userService.GetUserAsync(User);&#10;    if (user.Parent == null)&#10;    {&#10;        return Forbid();&#10;    }&#10;}&#10;catch (NullReferenceException)&#10;{&#10;    return Unauthorized();&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+</templateSet>
